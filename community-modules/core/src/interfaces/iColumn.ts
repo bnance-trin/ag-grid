@@ -236,7 +236,7 @@ export interface Column<TValue = any>
     getMaxWidth(): number;
 
     /** Returns the `flex` value of the column or 0 if not set.  */
-    getFlex(): number;
+    getFlex(): number | null;
 
     /** Returns `true` if row group is currently active for this column. */
     isRowGroupActive(): boolean;
